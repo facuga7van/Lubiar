@@ -20,9 +20,24 @@ export function Header({ className }: SidebarProps) {
   const pathname = usePathname()
   const items = [
     {
-      href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
-      title: 'Book a demo',
-      openInNewTab: true
+      href: '#',
+      title: 'boton 1',
+      openInNewTab: false
+    },
+    {
+      href: '#',
+      title: 'boton 2',
+      openInNewTab: false
+    },
+    {
+      href: '#',
+      title: 'boton 3',
+      openInNewTab: false
+    },
+    {
+      href: '#',
+      title: 'boton 4',
+      openInNewTab: false
     }
     // { href: '#pricing', title: 'Features' },
     // {
@@ -33,9 +48,13 @@ export function Header({ className }: SidebarProps) {
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
-      <img src="/logo.svg" className="mr-3" />
+      <img
+        src="/loguito.png"
+        className="mr-3"
+        width="50px"
+      />
       <Typography className="!text-white !text-base font-medium ">
-        Pandem
+        Lubiar
       </Typography>
     </Link>
   )
@@ -46,7 +65,7 @@ export function Header({ className }: SidebarProps) {
         href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
         target="_blank"
       >
-        <Typography variant="p">Login</Typography>
+        <Typography variant="p">Boton 1</Typography>
       </Link>
       <Link
         href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
@@ -54,7 +73,7 @@ export function Header({ className }: SidebarProps) {
       >
         <Button size="tiny" color="ghost">
           <Typography variant="p" className="text-black">
-            Sign Up
+            Boton 2
           </Typography>
         </Button>
       </Link>

@@ -9,20 +9,16 @@ import { Analytics } from '@vercel/analytics/react'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title:
-    'Pandem - Information you need during on-call emergencies',
-  description:
-    'Quickly link new on-call tickets to similar past incidents and their solutions. All directly in Slack the moment an incident happens.',
+  title: 'Lubiar - Abordaje psicologico de adicciones',
+  description: 'ipsum dolor.',
   openGraph: {
     images: '/opengraph-image.png'
   },
   twitter: {
     card: 'summary_large_image',
-    title:
-      'Pandem - Information you need during on-call emergencies',
-    description:
-      'Quickly link new on-call tickets to similar past incidents and their solutions. All directly in Slack the moment an incident happens.',
-    images: ['https://i.imgur.com/MPMcyPP.png']
+    title: 'Lubiar - Abordaje psicologico de adicciones',
+    description: 'ipsum dolor.',
+    images: ['https://imgur.com/a/CxGvIfY']
   }
 }
 

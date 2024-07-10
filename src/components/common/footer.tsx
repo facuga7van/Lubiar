@@ -11,36 +11,37 @@ export function Footer() {
             href="/"
             className="pointer flex items-center"
           >
-            <img src="/logo.svg" className="mr-3" />
+            <img
+              src="/loguito.png"
+              className="mr-3"
+              width="40px"
+            />
             <Typography className="!text-white !text-base font-medium ">
-              Pandem
+              Lubiar
             </Typography>
           </Link>
         </div>
         <div className="flex max-w-fit items-center gap-x-4">
           <Link
-            href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
+            href="#"
             target="_blank"
             className="pointer block w-fit flex-1"
           >
             <Typography variant="p" className="w-max">
-              Book a demo
+              Contáctanos
             </Typography>
           </Link>
           <Link
-            href="/terms-of-service"
+            href="#"
             className="pointer block w-fit flex-1"
           >
             <Typography variant="p" className="w-max">
-              Terms of service
+              lubiar@gmail.com
             </Typography>
           </Link>
-          <Link
-            href="/privacy-policy"
-            className="pointer block w-fit"
-          >
+          <Link href="#" className="pointer block w-fit">
             <Typography variant="p">
-              Privacy Policy
+              +54 9 11 1234-1234
             </Typography>
           </Link>
         </div>

@@ -1,9 +1,9 @@
 {
-  "name": "landing-page-boilerplate",
+  "name": "lubiar",
   "version": "0.1.0",
   "author": {
-    "name": "Anthony Sistilli",
-    "url": "https://linktr.ee/anthonysistilli"
+    "name": "Facundo Galvan",
+    "url": "https://github.com/facuga7van"
   },
   "private": true,
   "scripts": {
