@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import Typography from '@/components/ui/typography'
 import Image from 'next/image'
 import Feature from './feature'
+import { Contact } from '@/components/common/contact'
 import { Martini, Pill, Cigarette } from 'lucide-react'
 import Link from 'next/link'
 
@@ -24,8 +25,8 @@ export default function Home() {
           et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco
         </Typography>
-        <Link href="#" target="_blank">
-          <Button size="tiny" variant="ghost">
+        <Link href="#contacto" >
+          <Button size="tiny" variant="ghost" className='filterHighlight'>
             {`Contacto`}
           </Button>
         </Link>
@@ -37,11 +38,11 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
-        <div className="flex flex-col gap-12 items-center">
+        <div id='abordamos' className="flex flex-col gap-12 items-center">
           <Typography className="max-w-2xl" variant="h1">
             Abordamos
           </Typography>
-          <div className="flex md:flex-row flex-col gap-12">
+          <div className="flex md:flex-row flex-col gap-12 ">
             <Feature
               icon={<Cigarette size={24} />}
               headline="Tabaquismo"
@@ -59,7 +60,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-6 max-w-2xl items-center">
+        <div id='aboutus' className="flex flex-col gap-6 max-w-2xl items-center">
           <Typography className="max-w-2xl" variant="h1">
             ¿Quiénes somos?
           </Typography>
@@ -80,38 +81,30 @@ export default function Home() {
             src="/pic3.jpg"
           />
         </div>
-        <div className="flex flex-col gap-6 max-w-2xl items-center">
+        <div id='talleres' className="flex flex-col gap-6 max-w-2xl items-center">
           <Typography className="max-w-2xl" variant="h1">
             Talleres
           </Typography>
-          <Typography className="max-w-2xl" variant="p">
-            Realizamos talleres grupales o individuales. Los
+          <div className="max-w-2xl">
+          Realizamos talleres grupales o individuales. Los
             grupales requieren un cupo mínimo. Los talleres
             individuales se llevarán a cabo dependiendo de
             las necesidades de cada persona.
-            <br />. Logro de objetivos (individual)
-            <br />. Inteligencia emocional
-            <br />. Psicodrama (grupal)
-            <br />. Comunicación efectiva (grupal)
-            <br />. Grupos de charla de madres de hijos en
-            consumo
-          </Typography>
+            <ul className='my-10'>
+              <li>Logro de objetivos (individual)</li>
+              <li>Inteligencia emocional</li>
+              <li>Psicodrama (grupal)</li>
+              <li>Comunicación efectiva (grupal)</li>
+              <li>Grupos de charla de madres de hijos en
+              consumo</li>
+            </ul>
+          </div>
         </div>
-        <div className="flex flex-col gap-6 items-center">
+        <div id='contacto' className="flex flex-col gap-6 items-center">
           <Typography className="max-w-2xl" variant="h1">
             Contáctanos
           </Typography>
-          <div>
-            Envianos un mail o un mensaje por Whatsapp
-          </div>
-          <Link
-            href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-            target="_blank"
-          >
-            <Button size="tiny" variant="ghost">
-              {`Contacto`}
-            </Button>
-          </Link>
+          <Contact/>
         </div>
       </div>
     </div>

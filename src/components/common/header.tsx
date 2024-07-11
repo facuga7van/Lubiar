@@ -20,40 +20,35 @@ export function Header({ className }: SidebarProps) {
   const pathname = usePathname()
   const items = [
     {
-      href: '#',
-      title: 'boton 1',
+      href: '#abordamos',
+      title: 'Abordaje',
       openInNewTab: false
     },
     {
-      href: '#',
-      title: 'boton 2',
+      href: '#aboutus',
+      title: 'Sobre nosotros',
       openInNewTab: false
     },
     {
-      href: '#',
-      title: 'boton 3',
+      href: '#talleres',
+      title: 'Talleres',
       openInNewTab: false
     },
     {
-      href: '#',
-      title: 'boton 4',
+      href: '#contacto',
+      title: 'Contacto',
       openInNewTab: false
     }
-    // { href: '#pricing', title: 'Features' },
-    // {
-    //   href: 'mailto:myemail@.com',
-    //   title: 'Contact Us'
-    // }
   ]
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
       <img
-        src="/loguito.png"
+        src="/logo.svg"
         className="mr-3"
-        width="50px"
+        
       />
-      <Typography className="!text-white !text-base font-medium ">
+      <Typography className="!text-base font-medium ">
         Lubiar
       </Typography>
     </Link>
@@ -123,9 +118,12 @@ export function Header({ className }: SidebarProps) {
           </div>
           <div className="hidden md:flex flex items-center w-full">
             <div className="flex items-center gap-x-8 flex-1">
-              {getHeaderItems()}
+              
             </div>
-            {getAuthButtons()}
+            <div className="flex items-center gap-x-8">
+            {getHeaderItems()}
+            </div>
+            
           </div>
           {/* Mobile */}
           <div className="md:hidden flex gap-x-4 items-center">

@@ -12,11 +12,11 @@ export function Footer() {
             className="pointer flex items-center"
           >
             <img
-              src="/loguito.png"
+              src="/logo.svg"
               className="mr-3"
               width="40px"
             />
-            <Typography className="!text-white !text-base font-medium ">
+            <Typography className="!text-base font-medium ">
               Lubiar
             </Typography>
           </Link>
@@ -36,7 +36,7 @@ export function Footer() {
             className="pointer block w-fit flex-1"
           >
             <Typography variant="p" className="w-max">
-              lubiar@gmail.com
+              lubiar.salud@gmail.com
             </Typography>
           </Link>
           <Link href="#" className="pointer block w-fit">
@@ -44,6 +44,7 @@ export function Footer() {
               +54 9 11 1234-1234
             </Typography>
           </Link>
+          
         </div>
       </div>
     </footer>
