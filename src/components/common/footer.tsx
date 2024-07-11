@@ -44,7 +44,6 @@ export function Footer() {
               +54 9 11 1234-1234
             </Typography>
           </Link>
-          
         </div>
       </div>
     </footer>

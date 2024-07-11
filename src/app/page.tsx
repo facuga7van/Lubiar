@@ -25,8 +25,12 @@ export default function Home() {
           et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco
         </Typography>
-        <Link href="#contacto" >
-          <Button size="tiny" variant="ghost" className='filterHighlight'>
+        <Link href="#contacto">
+          <Button
+            size="tiny"
+            variant="ghost"
+            className="filterHighlight"
+          >
             {`Contacto`}
           </Button>
         </Link>
@@ -38,7 +42,10 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
-        <div id='abordamos' className="flex flex-col gap-12 items-center">
+        <div
+          id="abordamos"
+          className="flex flex-col gap-12 items-center"
+        >
           <Typography className="max-w-2xl" variant="h1">
             Abordamos
           </Typography>
@@ -60,7 +67,10 @@ export default function Home() {
             />
           </div>
         </div>
-        <div id='aboutus' className="flex flex-col gap-6 max-w-2xl items-center">
+        <div
+          id="aboutus"
+          className="flex flex-col gap-6 max-w-2xl items-center"
+        >
           <Typography className="max-w-2xl" variant="h1">
             ¿Quiénes somos?
           </Typography>
@@ -81,30 +91,38 @@ export default function Home() {
             src="/pic3.jpg"
           />
         </div>
-        <div id='talleres' className="flex flex-col gap-6 max-w-2xl items-center">
+        <div
+          id="talleres"
+          className="flex flex-col gap-6 max-w-2xl items-center"
+        >
           <Typography className="max-w-2xl" variant="h1">
             Talleres
           </Typography>
           <div className="max-w-2xl">
-          Realizamos talleres grupales o individuales. Los
+            Realizamos talleres grupales o individuales. Los
             grupales requieren un cupo mínimo. Los talleres
             individuales se llevarán a cabo dependiendo de
             las necesidades de cada persona.
-            <ul className='my-10'>
+            <ul className="my-10">
               <li>Logro de objetivos (individual)</li>
               <li>Inteligencia emocional</li>
               <li>Psicodrama (grupal)</li>
               <li>Comunicación efectiva (grupal)</li>
-              <li>Grupos de charla de madres de hijos en
-              consumo</li>
+              <li>
+                Grupos de charla de madres de hijos en
+                consumo
+              </li>
             </ul>
           </div>
         </div>
-        <div id='contacto' className="flex flex-col gap-6 items-center">
+        <div
+          id="contacto"
+          className="flex flex-col gap-6 items-center"
+        >
           <Typography className="max-w-2xl" variant="h1">
             Contáctanos
           </Typography>
-          <Contact/>
+          <Contact />
         </div>
       </div>
     </div>

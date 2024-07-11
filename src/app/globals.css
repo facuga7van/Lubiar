@@ -25,7 +25,11 @@
     --ring: 240 5.9% 10%;
     --radius: 0.5rem;
     --minor: 0 0% 15%;
-    --background-gradient: linear-gradient(90deg, rgb(240, 240, 240) 0%, rgb(252, 240, 255) 100%);
+    --background-gradient: linear-gradient(
+      90deg,
+      rgb(240, 240, 240) 0%,
+      rgb(252, 240, 255) 100%
+    );
   }
 
   .light {
@@ -49,7 +53,11 @@
     --input: 240 3.7% 85.9%;
     --ring: 282 100% 50%;
     --minor: 0 0% 30%;
-    --background-gradient: linear-gradient(90deg, rgb(240, 240, 240) 0%, rgb(252, 240, 255) 100%);
+    --background-gradient: linear-gradient(
+      90deg,
+      rgb(240, 240, 240) 0%,
+      rgb(252, 240, 255) 100%
+    );
   }
 }
 
@@ -71,15 +79,14 @@
       padding-left: 24px;
       padding-right: 24px;
       scroll-behavior: smooth;
-
     }
   }
 }
 
- li {
+li {
   list-style-type: disc;
   text-align: left;
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 .filterHighlight {
