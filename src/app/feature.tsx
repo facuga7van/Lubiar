@@ -14,7 +14,7 @@ const Feature: React.FC<FeatureProps> = ({
 }) => {
   return (
     <div
-      className="flex flex-col gap-6 text-left max-w-72 md:items-start
+      className="flex flex-col gap-6 text-left max-w-72 text-center
         items-center"
     >
       <div className="py-4 px-4 rounded-md border max-w-fit filterHighlight">

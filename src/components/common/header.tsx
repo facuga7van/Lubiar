@@ -20,55 +20,34 @@ export function Header({ className }: SidebarProps) {
   const pathname = usePathname()
   const items = [
     {
-      href: '#abordamos',
+      href: '/#abordamos',
       title: 'Abordaje',
       openInNewTab: false
     },
     {
-      href: '#aboutus',
+      href: '/#aboutus',
       title: 'Sobre nosotros',
       openInNewTab: false
     },
     {
-      href: '#talleres',
+      href: '/#talleres',
       title: 'Talleres',
       openInNewTab: false
     },
     {
-      href: '#contacto',
+      href: '/#contacto',
       title: 'Contacto',
       openInNewTab: false
     }
   ]
 
   const getLogo = () => (
-    <Link href="/" className="pointer flex items-center">
-      <img src="/logo.svg" className="mr-3" />
+    <Link href="/" className="pointer flex items-center hover:drop-shadow-lg transition duration-300 ease-in-out">
+      <img src="/logo.svg" className="mr-2" width={50} height={50}/>
       <Typography className="!text-base font-medium ">
         Lubiar
       </Typography>
     </Link>
-  )
-
-  const getAuthButtons = () => (
-    <div className="flex gap-3 items-center">
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
-        <Typography variant="p">Boton 1</Typography>
-      </Link>
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
-        <Button size="tiny" color="ghost">
-          <Typography variant="p" className="text-black">
-            Boton 2
-          </Typography>
-        </Button>
-      </Link>
-    </div>
   )
 
   const getHeaderItems = () => {
@@ -81,7 +60,7 @@ export function Header({ className }: SidebarProps) {
           return (
             <Link
               href={item.href}
-              className="pointer block w-fit"
+              className="pointer block w-fit hover:drop-shadow-lg transition duration-300 ease-in-out"
               target={item.openInNewTab ? '_blank' : ''}
               key={item.title}
             >
@@ -101,8 +80,8 @@ export function Header({ className }: SidebarProps) {
   return (
     <div
       className={cn(
-        `flex md:h-12 h-14 items-center justify-center w-full
-          border-b`,
+        `flex md:h-12 h-14 items-center justify-center w-full shadow-md header
+          border-b bg-color-1`,
         className
       )}
     >
@@ -120,7 +99,7 @@ export function Header({ className }: SidebarProps) {
           </div>
           {/* Mobile */}
           <div className="md:hidden flex gap-x-4 items-center">
-            {getAuthButtons()}
+
             <Drawer direction="right">
               <DrawerTrigger asChild>
                 <MenuIcon />

@@ -90,5 +90,23 @@ li {
 }
 
 .filterHighlight {
-  filter: drop-shadow(0 0 5px rgba(138, 43, 226, 0.7));
+  filter: drop-shadow(0 0 5px rgba(138, 43, 226, 0.4));
+}
+
+@layer components {
+  .header{
+    z-index: 99;
+  }
+  .bg-color-1 {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Difumina el borde */
+  }
+  .spectrum-background {
+    width: 500px;
+    height: 1000px;
+    background:
+        linear-gradient(150deg, #ecedee, transparent 30%),
+        linear-gradient(330deg, rgb(210, 206, 242), transparent 30%),
+        linear-gradient(225deg, #ffe5ff, #fce8ef, #f0ffef, powderblue);
+}
 }

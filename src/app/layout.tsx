@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'Lubiar - Abordaje psicologico de adicciones',
   description: 'ipsum dolor.',
   openGraph: {
-    images: '/opengraph-image.png'
+    images: '/logo.png'
   },
   twitter: {
     card: 'summary_large_image',
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es"
       suppressHydrationWarning
       className="antialiased"
     >
@@ -45,7 +45,7 @@ export default function RootLayout({
             className={`flex min-h-screen flex-col ${inter.className}`}
           >
             <Header />
-            <div className="flex flex-1 justify-center w-full">
+            <div className="flex flex-1 justify-center w-full spectrum-background">
               <div className="flex w-full max-w-[1280px] h-full">
                 {children}
               </div>

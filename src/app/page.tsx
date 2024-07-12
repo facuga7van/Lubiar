@@ -3,45 +3,55 @@ import Typography from '@/components/ui/typography'
 import Image from 'next/image'
 import Feature from './feature'
 import { Contact } from '@/components/common/contact'
-import { Martini, Pill, Cigarette } from 'lucide-react'
+import { Martini, Pill, Cigarette, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Home() {
   return (
     <div
-      className="flex flex-col h-full md:py-36 md:px-32 pt-11 pb-24 px-8
-        w-full items-center text-center gap-12"
+      className="flex flex-col h-full md:py-12 md:px-36 pt-12 pb-24 px-8
+        w-full items-center text-center gap-12 bg-color-1"
     >
       <div className="flex flex-col gap-6 items-center">
-        <Typography className="max-w-2xl" variant="h1">
+      <Image
+          width={268}
+          height={206}
+          alt="Lubiar logo image"
+          src="/logo.png"
+        />
+        <Typography className="max-w-2xl hidden" variant="h1">
           Lubiar
         </Typography>
         <Typography className="max-w-2xl" variant="h2">
           Abordaje Psicologico
         </Typography>
         <Typography className="max-w-2xl" variant="h5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco
+        Somos un grupo interdisciplinario que aborda adicciones incorporando tratamientos alternativos con láser para la remisión de consumo
         </Typography>
         <Link href="#contacto">
           <Button
-            size="tiny"
+            size="lg"
             variant="ghost"
             className="filterHighlight"
           >
             {`Contacto`}
           </Button>
         </Link>
+        <div className='border-4 border-purple-300/35'>
         <Image
-          width={1024}
-          height={632}
-          alt="Pandem.dev hero image"
-          src="/pic2.jpg"
+          width={805}
+          height={405}
+          alt="freedom image"
+          src="/pic1.jpg"
+          className='p-2'
         />
+        </div>
+        
       </div>
-      <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
+      <div
+        className="flex flex-col md:pt-24 gap-24 items-center
+          "
+      >
         <div
           id="abordamos"
           className="flex flex-col gap-12 items-center"
@@ -49,22 +59,28 @@ export default function Home() {
           <Typography className="max-w-2xl" variant="h1">
             Abordamos
           </Typography>
-          <div className="flex md:flex-row flex-col gap-12 ">
+          <div className="flex md:flex-row flex-col gap-12">
+            <Link className='transform hover:scale-105 transition duration-300 ease-in-out' href='/tabaquismo'>
             <Feature
               icon={<Cigarette size={24} />}
               headline="Tabaquismo"
               description="El tabaquismo es una enfermedad crónica que causa dependencia al tabaco, afectando gravemente la salud con enfermedades como cáncer de pulmón y problemas cardíacos. También impacta negativamente a quienes rodean al fumador."
             />
+            </Link>
+            <Link className='transform hover:scale-105 transition duration-300 ease-in-out'  href='/alcoholismo'>
             <Feature
               icon={<Martini size={24} />}
               headline="Alcoholismo"
               description="El alcoholismo es una enfermedad crónica que causa dependencia al alcohol, afectando la salud física, mental y el entorno social."
             />
+            </Link>
+            <Link className='transform hover:scale-105 transition duration-300 ease-in-out'  href='/cocainomania'>
             <Feature
               icon={<Pill size={24} />}
               headline="Cocainomania"
               description="La adicción a la cocaína es una enfermedad crónica que genera dependencia física y emocional a esta droga. Afecta gravemente la salud, causando problemas cardíacos, neurológicos y mentales. También impacta negativamente en la vida personal y social del individuo. "
             />
+            </Link>
           </div>
         </div>
         <div
@@ -84,12 +100,15 @@ export default function Home() {
             el bienestar y en los requerimientos de cada
             paciente en particular.
           </Typography>
-          <Image
-            width={1024}
-            height={632}
-            alt="Pandem.dev hero image"
-            src="/pic3.jpg"
-          />
+          <div className='border-4 border-purple-300/35'>
+        <Image
+          width={805}
+          height={405}
+          alt="team image"
+          src="/pic2.jpg"
+          className='p-2'
+        />
+        </div>
         </div>
         <div
           id="talleres"
@@ -98,6 +117,7 @@ export default function Home() {
           <Typography className="max-w-2xl" variant="h1">
             Talleres
           </Typography>
+          <Typography className="max-w-2xl" variant="p">
           <div className="max-w-2xl">
             Realizamos talleres grupales o individuales. Los
             grupales requieren un cupo mínimo. Los talleres
@@ -114,6 +134,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
+          </Typography>
         </div>
         <div
           id="contacto"
