@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 export default function Page() {
@@ -81,14 +81,14 @@ export default function Page() {
         solicitar más información al respecto.{' '}
       </p>
       <Link href="/#contacto">
-          <Button
-            size="lg"
-            variant="ghost"
-            className="filterHighlight"
-          >
-            {`Contacto`}
-          </Button>
-        </Link>
+        <Button
+          size="lg"
+          variant="ghost"
+          className="filterHighlight"
+        >
+          {`Contacto`}
+        </Button>
+      </Link>
     </div>
   )
 }

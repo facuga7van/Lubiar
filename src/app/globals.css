@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -90,11 +91,17 @@ li {
 }
 
 .filterHighlight {
-  filter: drop-shadow(0 0 5px rgba(138, 43, 226, 0.4));
+  filter: drop-shadow(0 0 5px rgba(138, 43, 226, 0.4)) !important;
 }
-
+.buttonLub{
+  border: 2px solid rgba(138, 43, 226, 0.4);
+  border-radius: 0.3rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  background-color: transparent;
+  text-decoration: none;
+}
 @layer components {
-  .header{
+  .header {
     z-index: 99;
   }
   .bg-color-1 {
@@ -104,9 +111,42 @@ li {
   .spectrum-background {
     width: 500px;
     height: 1000px;
-    background:
-        linear-gradient(150deg, #ecedee, transparent 30%),
-        linear-gradient(330deg, rgb(210, 206, 242), transparent 30%),
-        linear-gradient(225deg, #ffe5ff, #fce8ef, #f0ffef, powderblue);
+    background: linear-gradient(
+        150deg,
+        #ecedee,
+        transparent 30%
+      ),
+      linear-gradient(
+        330deg,
+        rgb(210, 206, 242),
+        transparent 30%
+      ),
+      linear-gradient(
+        225deg,
+        #ffe5ff,
+        #fce8ef,
+        #f0ffef,
+        powderblue
+      );
+  }
 }
+
+.buttonLub {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgba(138, 43, 226, 1);
+  background: rgba(138, 43, 226, 1);
+}
+.buttonLub:hover {
+  background: #fff;
+  color: rgba(138, 43, 226, 1)
 }

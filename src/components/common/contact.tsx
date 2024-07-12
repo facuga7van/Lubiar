@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
 import Typography from '@/components/ui/typography'
-import { Button } from '../ui/button'
 
 export function Contact() {
   return (
@@ -27,14 +26,12 @@ export function Contact() {
           className="border p-2 rounded w-full"
           rows={4}
         />
-          <Button
-            size="lg"
-            variant="ghost"
-            type='submit'
-            className="filterHighlight w-full"
-          >
-            {`Enviar`}
-          </Button>
+        <button
+          type="submit"
+          className="filterHighlight w-full buttonLub"
+        >
+          {`Enviar`}
+        </button>
       </form>
       <Typography variant="p">
         También puedes llamarnos al{' '}

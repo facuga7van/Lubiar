@@ -1,7 +1,6 @@
 'use client'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { usePathname } from 'next/navigation'
 import Typography from '@/components/ui/typography'
 import {
@@ -42,8 +41,17 @@ export function Header({ className }: SidebarProps) {
   ]
 
   const getLogo = () => (
-    <Link href="/" className="pointer flex items-center hover:drop-shadow-lg transition duration-300 ease-in-out">
-      <img src="/logo.svg" className="mr-2" width={50} height={50}/>
+    <Link
+      href="/"
+      className="pointer flex items-center hover:drop-shadow-lg transition
+        duration-300 ease-in-out"
+    >
+      <img
+        src="/logo.svg"
+        className="mr-2"
+        width={50}
+        height={50}
+      />
       <Typography className="!text-base font-medium ">
         Lubiar
       </Typography>
@@ -60,7 +68,8 @@ export function Header({ className }: SidebarProps) {
           return (
             <Link
               href={item.href}
-              className="pointer block w-fit hover:drop-shadow-lg transition duration-300 ease-in-out"
+              className="pointer block w-fit hover:drop-shadow-lg transition
+                duration-300 ease-in-out"
               target={item.openInNewTab ? '_blank' : ''}
               key={item.title}
             >
@@ -80,8 +89,8 @@ export function Header({ className }: SidebarProps) {
   return (
     <div
       className={cn(
-        `flex md:h-12 h-14 items-center justify-center w-full shadow-md header
-          border-b bg-color-1`,
+        `flex md:h-12 h-14 items-center justify-center w-full
+          shadow-md header border-b bg-color-1`,
         className
       )}
     >
@@ -99,7 +108,6 @@ export function Header({ className }: SidebarProps) {
           </div>
           {/* Mobile */}
           <div className="md:hidden flex gap-x-4 items-center">
-
             <Drawer direction="right">
               <DrawerTrigger asChild>
                 <MenuIcon />
