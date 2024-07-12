@@ -51,11 +51,7 @@ export default function Home() {
           <ImageCarousel images={images} interval={5000} />
         </div>
       </div>
-      <div
-        className="flex flex-col md:pt-24 gap-24
-          items-center
-                              "
-      >
+      <div className="flex flex-col md:pt-24 gap-24 items-center">
         <div
           id="abordamos"
           className="flex flex-col gap-12 items-center"
