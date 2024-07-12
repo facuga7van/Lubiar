@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -91,9 +90,11 @@ li {
 }
 
 .filterHighlight {
-  filter: drop-shadow(0 0 5px rgba(138, 43, 226, 0.4)) !important;
+  filter: drop-shadow(
+    0 0 5px rgba(138, 43, 226, 0.4)
+  ) !important;
 }
-.buttonLub{
+.buttonLub {
   border: 2px solid rgba(138, 43, 226, 0.4);
   border-radius: 0.3rem;
   padding: 1rem 0.5rem 1rem 0.5rem;
@@ -148,5 +149,5 @@ li {
 }
 .buttonLub:hover {
   background: #fff;
-  color: rgba(138, 43, 226, 1)
+  color: rgba(138, 43, 226, 1);
 }

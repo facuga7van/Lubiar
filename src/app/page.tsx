@@ -10,7 +10,7 @@ const images = [
   '/carousel1.jpg',
   '/carousel2.jpg',
   '/pic1.jpg'
-];
+]
 
 export default function Home() {
   return (
@@ -33,7 +33,8 @@ export default function Home() {
         </Typography>
         <div className="w-[40%] h-px bg-gray-300 my-2"></div>
         <Typography className="max-w-2xl" variant="h2">
-        Tratamientos psicológicos y alternativos para dejar de consumir
+          Tratamientos psicológicos y alternativos para
+          dejar de consumir
         </Typography>
         <Typography className="max-w-2xl" variant="h5">
           Somos un grupo interdisciplinario que aborda
@@ -41,20 +42,19 @@ export default function Home() {
           con láser para la remisión de consumo
         </Typography>
         <Link href="#contacto">
-          <div
-            className="filterHighlight buttonLub"
-          >
+          <div className="filterHighlight buttonLub">
             {`Contacto`}
           </div>
         </Link>
-        
+
         <div className="border-4 border-purple-300/35">
-          <ImageCarousel images={images} interval={5000}/>
+          <ImageCarousel images={images} interval={5000} />
         </div>
       </div>
       <div
-        className="flex flex-col md:pt-24 gap-24 items-center
-                    "
+        className="flex flex-col md:pt-24 gap-24
+          items-center
+                              "
       >
         <div
           id="abordamos"
