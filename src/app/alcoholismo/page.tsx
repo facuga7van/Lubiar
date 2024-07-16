@@ -56,15 +56,17 @@ export default function Page() {
         terapeuta en adicciones y psiquiatra si así lo
         requiriese.
       </p>
-      <Link href="/#contacto">
-        <Button
-          size="lg"
-          variant="ghost"
-          className="filterHighlight"
-        >
-          {`Contacto`}
-        </Button>
-      </Link>
+      <div className='flex w-full justify-end'>
+        <Link href="/#contacto">
+          <Button
+            size="lg"
+            variant="ghost"
+            className="filterHighlight"
+          >
+            {`Contacto`}
+          </Button>
+        </Link>
+      </div>
     </div>
   )
 }

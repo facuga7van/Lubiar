@@ -80,15 +80,17 @@ export default function Page() {
         diferentes valores. Comuníquese al WhatsApp para
         solicitar más información al respecto.{' '}
       </p>
-      <Link href="/#contacto">
-        <Button
-          size="lg"
-          variant="ghost"
-          className="filterHighlight"
-        >
-          {`Contacto`}
-        </Button>
-      </Link>
+      <div className='flex w-full justify-end'>
+        <Link href="/#contacto">
+          <Button
+            size="lg"
+            variant="ghost"
+            className="filterHighlight"
+          >
+            {`Contacto`}
+          </Button>
+        </Link>
+      </div>
     </div>
   )
 }

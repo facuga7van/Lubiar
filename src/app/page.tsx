@@ -9,7 +9,7 @@ import Link from 'next/link'
 const images = [
   '/carousel1.jpg',
   '/carousel2.jpg',
-  '/pic1.jpg'
+  '/carousel3.jpg'
 ]
 
 export default function Home() {
