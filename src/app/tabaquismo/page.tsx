@@ -51,7 +51,7 @@ export default function Page() {
         diferentes valores. Comuníquese al WhatsApp para
         solicitar más información al respecto.{' '}
       </p>
-      <div className='flex w-full justify-end'>
+      <div className="flex w-full justify-end">
         <Link href="/#contacto">
           <Button
             size="lg"

@@ -56,7 +56,7 @@ export default function Page() {
         terapeuta en adicciones y psiquiatra si así lo
         requiriese.
       </p>
-      <div className='flex w-full justify-end'>
+      <div className="flex w-full justify-end">
         <Link href="/#contacto">
           <Button
             size="lg"
