@@ -19,7 +19,7 @@ export default function Home() {
       className="flex flex-col h-full md:py-12 md:px-36 pt-12 pb-24 px-8
         w-full items-center text-center gap-12 bg-color-1"
     >
-      <Whatsapp/>
+      <Whatsapp />
       <div className="flex flex-col gap-6 items-center">
         <Image
           width={268}
@@ -35,8 +35,8 @@ export default function Home() {
         </Typography>
         <div className="w-[40%] h-px bg-gray-300 my-2"></div>
         <Typography className="max-w-2xl" variant="h2">
-          Abordaje psicológico y alternativo para
-          dejar de consumir
+          Abordaje psicológico y alternativo para dejar de
+          consumir
         </Typography>
         <Typography className="max-w-2xl" variant="h6">
           Somos un grupo interdisciplinario que aborda
