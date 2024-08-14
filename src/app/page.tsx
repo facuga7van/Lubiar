@@ -5,6 +5,7 @@ import ImageCarousel from '@/components/common/Carrousel'
 import { Contact } from '@/components/common/contact'
 import { Martini, Pill, Cigarette } from 'lucide-react'
 import Link from 'next/link'
+import Whatsapp from '@/components/common/Whatsapp'
 
 const images = [
   '/carousel1.jpg',
@@ -18,6 +19,7 @@ export default function Home() {
       className="flex flex-col h-full md:py-12 md:px-36 pt-12 pb-24 px-8
         w-full items-center text-center gap-12 bg-color-1"
     >
+      <Whatsapp/>
       <div className="flex flex-col gap-6 items-center">
         <Image
           width={268}
@@ -33,10 +35,10 @@ export default function Home() {
         </Typography>
         <div className="w-[40%] h-px bg-gray-300 my-2"></div>
         <Typography className="max-w-2xl" variant="h2">
-          Tratamientos psicológicos y alternativos para
+          Abordaje psicológico y alternativo para
           dejar de consumir
         </Typography>
-        <Typography className="max-w-2xl" variant="h5">
+        <Typography className="max-w-2xl" variant="h6">
           Somos un grupo interdisciplinario que aborda
           adicciones incorporando tratamientos alternativos
           con láser para la remisión de consumo
@@ -102,7 +104,7 @@ export default function Home() {
           <Typography className="max-w-2xl" variant="h1">
             ¿Quiénes somos?
           </Typography>
-          <Typography className="max-w-2xl" variant="p">
+          <Typography className="max-w-2xl" variant="h6">
             Lubiar se caracteriza por tener un equipo
             conformado por Terapeutas en Adicciones,
             Técnicos en Neurolingüistica, Psicólogos y
@@ -129,7 +131,7 @@ export default function Home() {
           <Typography className="max-w-2xl" variant="h1">
             Talleres
           </Typography>
-          <Typography className="max-w-2xl" variant="p">
+          <Typography className="max-w-2xl" variant="h6">
             <div className="max-w-2xl">
               Realizamos talleres grupales o individuales.
               Los grupales requieren un cupo mínimo. Los
