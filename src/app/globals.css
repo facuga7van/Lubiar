@@ -82,7 +82,9 @@
     }
   }
 }
-
+html{
+  scroll-behavior: smooth;
+}
 li {
   list-style-type: disc;
   text-align: left;

@@ -39,9 +39,11 @@ export default function Home() {
           consumir
         </Typography>
         <Typography className="max-w-2xl" variant="h6">
-          Somos un grupo interdisciplinario que aborda
-          adicciones incorporando tratamientos alternativos
-          con láser para la remisión de consumo
+          Realizamos tratamientos cognitivos conductuales,
+          tratamientos láser de baja intensidad para la
+          remisión de consumo y terapia florar. Nos
+          caracterizamos por interrelacionar abordajes
+          alternativos y convencionales.
         </Typography>
         <Link href="#contacto">
           <div className="filterHighlight buttonLub">
@@ -54,112 +56,109 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col md:pt-24 gap-24 items-center">
-        <div
-          id="abordamos"
-          className="flex flex-col gap-12 items-center"
-        >
-          <Typography className="max-w-2xl" variant="h1">
-            Abordamos
-          </Typography>
-          <div className="flex md:flex-row flex-col gap-12">
-            <Link
-              className="transform hover:scale-105 transition duration-300
-                ease-in-out"
-              href="/tabaquismo"
-            >
-              <Feature
-                icon={<Cigarette size={24} />}
-                headline="Tabaquismo"
-                description="El tabaquismo es una enfermedad crónica que causa dependencia al tabaco, afectando gravemente la salud con enfermedades como cáncer de pulmón y problemas cardíacos. También impacta negativamente a quienes rodean al fumador."
-              />
-            </Link>
-            <Link
-              className="transform hover:scale-105 transition duration-300
-                ease-in-out"
-              href="/alcoholismo"
-            >
-              <Feature
-                icon={<Martini size={24} />}
-                headline="Alcoholismo"
-                description="El alcoholismo es una enfermedad crónica que causa dependencia al alcohol, afectando la salud física, mental y el entorno social."
-              />
-            </Link>
-            <Link
-              className="transform hover:scale-105 transition duration-300
-                ease-in-out"
-              href="/cocainomania"
-            >
-              <Feature
-                icon={<Pill size={24} />}
-                headline="Cocainomania"
-                description="La adicción a la cocaína es una enfermedad crónica que genera dependencia física y emocional a esta droga. Afecta gravemente la salud, causando problemas cardíacos, neurológicos y mentales. También impacta negativamente en la vida personal y social del individuo. "
-              />
-            </Link>
-          </div>
-        </div>
-        <div
-          id="aboutus"
-          className="flex flex-col gap-6 max-w-2xl items-center"
-        >
-          <Typography className="max-w-2xl" variant="h1">
-            ¿Quiénes somos?
-          </Typography>
-          <Typography className="max-w-2xl" variant="h6">
-            Lubiar se caracteriza por tener un equipo
-            conformado por Terapeutas en Adicciones,
-            Técnicos en Neurolingüistica, Psicólogos y
-            Psiquiatras. Buscamos acompañar a las personas
-            que padecen consumo problemático de sustancias
-            en su recorrido de recuperación centrándonos en
-            el bienestar y en los requerimientos de cada
-            paciente en particular.
-          </Typography>
-          <div className="border-4 border-purple-300/35">
-            <Image
-              width={805}
-              height={405}
-              alt="team image"
-              src="/pic2.jpg"
-              className="p-2"
-            />
-          </div>
-        </div>
-        <div
-          id="talleres"
-          className="flex flex-col gap-6 max-w-2xl items-center"
-        >
-          <Typography className="max-w-2xl" variant="h1">
-            Talleres
-          </Typography>
-          <Typography className="max-w-2xl" variant="h6">
-            <div className="max-w-2xl">
-              Realizamos talleres grupales o individuales.
-              Los grupales requieren un cupo mínimo. Los
-              talleres individuales se llevarán a cabo
-              dependiendo de las necesidades de cada
-              persona.
-              <ul className="my-10">
-                <li>Logro de objetivos (individual)</li>
-                <li>Inteligencia emocional</li>
-                <li>Psicodrama (grupal)</li>
-                <li>Comunicación efectiva (grupal)</li>
-                <li>
-                  Grupos de charla de madres de hijos en
-                  consumo
-                </li>
-              </ul>
+        <section id="abordamos">
+          <div className="flex flex-col gap-12 items-center">
+            <Typography className="max-w-2xl" variant="h1">
+              Abordamos
+            </Typography>
+            <div className="flex md:flex-row flex-col gap-12">
+              <Link
+                className="transform hover:scale-105 transition duration-300
+                  ease-in-out"
+                href="/tabaquismo"
+              >
+                <Feature
+                  icon={<Cigarette size={24} />}
+                  headline="Tabaquismo"
+                  description="El tabaquismo es una enfermedad crónica que causa dependencia al tabaco, afectando gravemente la salud con enfermedades como cáncer de pulmón y problemas cardíacos. También impacta negativamente a quienes rodean al fumador."
+                />
+              </Link>
+              <Link
+                className="transform hover:scale-105 transition duration-300
+                  ease-in-out"
+                href="/alcoholismo"
+              >
+                <Feature
+                  icon={<Martini size={24} />}
+                  headline="Alcoholismo"
+                  description="El alcoholismo es una enfermedad crónica que causa dependencia al alcohol, afectando la salud física, mental y el entorno social."
+                />
+              </Link>
+              <Link
+                className="transform hover:scale-105 transition duration-300
+                  ease-in-out"
+                href="/cocainomania"
+              >
+                <Feature
+                  icon={<Pill size={24} />}
+                  headline="Cocainomania"
+                  description="La adicción a la cocaína es una enfermedad crónica que genera dependencia física y emocional a esta droga. Afecta gravemente la salud, causando problemas cardíacos, neurológicos y mentales. También impacta negativamente en la vida personal y social del individuo. "
+                />
+              </Link>
             </div>
-          </Typography>
-        </div>
-        <div
-          id="contacto"
-          className="flex flex-col gap-6 items-center"
-        >
-          <Typography className="max-w-2xl" variant="h1">
-            Contáctanos
-          </Typography>
-          <Contact />
-        </div>
+          </div>
+        </section>
+        <section id="aboutus">
+          <div className="flex flex-col gap-6 max-w-2xl items-center">
+            <Typography className="max-w-2xl" variant="h1">
+              ¿Quiénes somos?
+            </Typography>
+            <Typography className="max-w-2xl" variant="h6">
+              Lubiar se caracteriza por tener en su equipo
+              técnicos en adicciones, técnicos en
+              programación neurolingüística, terapeutas
+              florales, psicólogos y psiquiatras. Buscamos
+              acompañar a las personas que padecen consumo
+              problemático de sustancias en su recorrido de
+              recuperación centrándonos en el bienestar y en
+              los requerimientos de cada paciente en
+              particular.
+            </Typography>
+            <div className="border-4 border-purple-300/35">
+              <Image
+                width={805}
+                height={405}
+                alt="team image"
+                src="/pic2.jpg"
+                className="p-2"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="talleres">
+          <div className="flex flex-col gap-6 max-w-2xl items-center">
+            <Typography className="max-w-2xl" variant="h1">
+              Talleres
+            </Typography>
+            <Typography className="max-w-2xl" variant="h6">
+              <div className="max-w-2xl">
+                Realizamos talleres grupales o individuales.
+                Los grupales requieren un cupo mínimo. Los
+                talleres individuales se llevarán a cabo
+                dependiendo de las necesidades de cada
+                persona.
+                <ul className="my-10">
+                  <li>Logro de objetivos (individual)</li>
+                  <li>Inteligencia emocional</li>
+                  <li>Psicodrama (grupal)</li>
+                  <li>Comunicación efectiva (grupal)</li>
+                  <li>
+                    Grupos de charla de madres de hijos en
+                    consumo
+                  </li>
+                </ul>
+              </div>
+            </Typography>
+          </div>
+        </section>
+        <section id="contacto">
+          <div className="flex flex-col gap-6 items-center">
+            <Typography className="max-w-2xl" variant="h1">
+              Contáctanos
+            </Typography>
+            <Contact />
+          </div>
+        </section>
       </div>
     </div>
   )
