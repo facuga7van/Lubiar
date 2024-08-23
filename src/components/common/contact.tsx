@@ -17,15 +17,22 @@ export function Contact() {
   return (
     <div className="flex flex-col gap-4 max-w-2xl items-center">
       <Typography variant="p">
-        Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros.
+        Si tienes alguna pregunta o necesitas más
+        información, no dudes en ponerte en contacto con
+        nosotros.
       </Typography>
-      <form className="flex flex-col gap-4 w-full filterHighlight" onSubmit={handleSubmit}>
+      <form
+        className="flex flex-col gap-4 w-full filterHighlight"
+        onSubmit={handleSubmit}
+      >
         <input
           type="text"
           placeholder="Nombre"
           className="border p-2 rounded w-full"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => {
+            setName(e.target.value)
+          }}
           required
         />
         <textarea
@@ -33,7 +40,9 @@ export function Contact() {
           className="border p-2 rounded w-full"
           rows={4}
           value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={(e) => {
+            setMessage(e.target.value)
+          }}
           required
         />
         <button
