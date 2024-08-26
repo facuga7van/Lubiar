@@ -19,7 +19,7 @@ export function Contact() {
       <Typography variant="p">
         Si tienes alguna pregunta o necesitas más
         información, no dudes en ponerte en contacto con
-        nosotros. 
+        nosotros.
       </Typography>
       <form
         className="flex flex-col gap-4 w-full filterHighlight"
