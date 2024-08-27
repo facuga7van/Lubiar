@@ -124,12 +124,7 @@ li {
         rgb(210, 206, 242),
         transparent 30%
       ),
-      linear-gradient(
-        225deg,
-        #fff0f0,
-        #fce8ef,
-        #fcf8ff
-      );
+      linear-gradient(225deg, #fff0f0, #fce8ef, #fcf8ff);
   }
 }
 

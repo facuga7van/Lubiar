@@ -55,7 +55,7 @@ export function Contact() {
       <Typography variant="p">
         También puedes llamarnos al{' '}
         <Link href="#" className="text-blue-800">
-        +54 9 11 7206-2121
+          +54 9 11 7206-2121
         </Link>{' '}
         o enviarnos un correo a{' '}
         <Link

@@ -68,8 +68,8 @@ export function Header({ className }: SidebarProps) {
           return (
             <Link
               href={item.href}
-              className="pointer font-medium block w-fit hover:drop-shadow-lg transition
-                duration-300 ease-in-out"
+              className="pointer font-medium block w-fit hover:drop-shadow-lg
+                transition duration-300 ease-in-out"
               target={item.openInNewTab ? '_blank' : ''}
               key={item.title}
             >
