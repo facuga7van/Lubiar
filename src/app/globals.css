@@ -27,8 +27,8 @@
     --minor: 0 0% 15%;
     --background-gradient: linear-gradient(
       90deg,
-      rgb(240, 240, 240) 0%,
-      rgb(252, 240, 255) 100%
+      rgb(240, 240, 240) 100%,
+      rgb(253, 245, 255) 100%
     );
   }
 
@@ -55,7 +55,7 @@
     --minor: 0 0% 30%;
     --background-gradient: linear-gradient(
       90deg,
-      rgb(240, 240, 240) 0%,
+      rgb(240, 240, 240) 100%,
       rgb(252, 240, 255) 100%
     );
   }
@@ -126,10 +126,9 @@ li {
       ),
       linear-gradient(
         225deg,
-        #ffe5ff,
+        #fff0f0,
         #fce8ef,
-        #f0ffef,
-        powderblue
+        #fcf8ff
       );
   }
 }

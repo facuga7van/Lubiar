@@ -10,14 +10,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Lubiar - Abordaje psicologico de adicciones',
-  description: 'ipsum dolor.',
+  description: 'Abordaje psicologico de adicciones.',
   openGraph: {
     images: '/logo.png'
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Lubiar - Abordaje psicologico de adicciones',
-    description: 'ipsum dolor.',
+    description: 'Abordaje psicologico de adicciones.',
     images: ['https://imgur.com/a/CxGvIfY']
   }
 }

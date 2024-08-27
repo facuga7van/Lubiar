@@ -4,7 +4,7 @@ export default function Whatsapp() {
   return (
     <>
       <a
-        href="https://wa.me/message/72HUXVW3IQHYC1"
+        href="https://wa.me/5491172062121"
         className="fixed bottom-5 right-5 bg-green-600 p-4 hover:p-5
           rounded-full shadow-lg z-10 text-center no-underline
           hover:-translate-x-2 hover:-translate-y-2 hover:scale-125

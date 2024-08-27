@@ -10,7 +10,7 @@ export function Contact() {
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()
     const whatsappMessage = `Hola, soy ${name}. ${message}`
-    const whatsappUrl = `https://wa.me/5491112341234?text=${encodeURIComponent(whatsappMessage)}`
+    const whatsappUrl = `https://wa.me/5491172062121?text=${encodeURIComponent(whatsappMessage)}`
     window.open(whatsappUrl, '_blank')
   }
 
@@ -55,7 +55,7 @@ export function Contact() {
       <Typography variant="p">
         También puedes llamarnos al{' '}
         <Link href="#" className="text-blue-800">
-          +54 9 11 1234-1234
+        +54 9 11 7206-2121
         </Link>{' '}
         o enviarnos un correo a{' '}
         <Link
@@ -64,7 +64,6 @@ export function Contact() {
         >
           lubiar@lubiar.com.ar
         </Link>
-        .
       </Typography>
     </div>
   )

@@ -38,12 +38,12 @@ export function Footer() {
             className="pointer block w-fit flex-1"
           >
             <Typography variant="p" className="w-max">
-              lubiar.salud@gmail.com
+              lubiar@lubiar.com.ar
             </Typography>
           </Link>
           <Link href="#" className="pointer block w-fit">
             <Typography variant="p">
-              +54 9 11 1234-1234
+              +54 9 11 7206-2121
             </Typography>
           </Link>
         </div>
