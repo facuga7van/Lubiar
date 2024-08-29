@@ -1,5 +1,4 @@
 import Typography from '@/components/ui/typography'
-import Image from 'next/image'
 import Feature from './feature'
 import ImageCarousel from '@/components/common/Carrousel'
 import { Contact } from '@/components/common/contact'
@@ -21,11 +20,11 @@ export default function Home() {
     >
       <Whatsapp />
       <div className="flex flex-col gap-6 items-center">
-        <Image
+        <img
           width={268}
           height={206}
           alt="Lubiar logo image"
-          src="/logo.png"
+          src='/logo.jpg'
         />
         <Typography
           className="max-w-2xl hidden"
@@ -115,7 +114,7 @@ export default function Home() {
               particular.
             </Typography>
             <div className="border-4 border-purple-300/35">
-              <Image
+              <img
                 width={805}
                 height={405}
                 alt="team image"

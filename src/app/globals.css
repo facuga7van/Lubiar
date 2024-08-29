@@ -68,6 +68,12 @@
   body {
     background: var(--background-gradient);
     @apply text-foreground;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  margin: 0;
+  padding: 0;
   }
   .sidebar {
     width: var(--sidebar-width);
@@ -84,6 +90,20 @@
 }
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+main {
+  flex-grow: 1;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+margin: 0;
+padding: 0;
 }
 li {
   list-style-type: disc;
@@ -102,6 +122,9 @@ li {
   padding: 1rem 0.5rem 1rem 0.5rem;
   background-color: transparent;
   text-decoration: none;
+}
+footer{
+  bottom: 0;
 }
 @layer components {
   .header {
