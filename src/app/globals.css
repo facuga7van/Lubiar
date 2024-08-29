@@ -72,8 +72,8 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
   }
   .sidebar {
     width: var(--sidebar-width);
@@ -102,8 +102,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 li {
   list-style-type: disc;
@@ -123,7 +123,7 @@ li {
   background-color: transparent;
   text-decoration: none;
 }
-footer{
+footer {
   bottom: 0;
 }
 @layer components {

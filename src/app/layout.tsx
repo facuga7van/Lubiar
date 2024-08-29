@@ -42,7 +42,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main
-            className={`flex  flex-col justify-between ${inter.className}`}
+            className={`flex flex-col justify-between ${inter.className}`}
           >
             <Header />
             <div className="flex flex-1 justify-center w-full spectrum-background">
@@ -51,11 +51,8 @@ export default function RootLayout({
               </div>
             </div>
 
-          <Footer />
-
+            <Footer />
           </main>
-          
-          
         </ThemeProvider>
       </body>
     </html>

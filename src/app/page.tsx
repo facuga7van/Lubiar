@@ -24,7 +24,7 @@ export default function Home() {
           width={268}
           height={206}
           alt="Lubiar logo image"
-          src='/logo.jpg'
+          src="/logo.jpg"
         />
         <Typography
           className="max-w-2xl hidden"
