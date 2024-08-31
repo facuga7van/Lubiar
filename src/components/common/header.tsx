@@ -43,7 +43,7 @@ export function Header({ className }: SidebarProps) {
   const getLogo = () => (
     <Link
       href="/"
-      className="pointer flex items-center hover:drop-shadow-lg transition
+      className="pointer flex items-center transition
         duration-300 ease-in-out"
     >
       <img

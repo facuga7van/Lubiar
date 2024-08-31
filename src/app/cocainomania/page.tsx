@@ -64,21 +64,22 @@ export default function Page() {
       </p>
       <h1 className="text-3xl font-bold my-4">Abordaje</h1>
       <p className="mb-4">
-        La terapia láser alternativa funciona por
-        estimulación y actúa en el centro de la adicción.
-        Consiste en la aplicación de un láser de baja
-        frecuencia en distintos puntos de cara y cabeza. El
-        proceso se realiza en una sesión de dos aplicaciones
-        que se lleva a cabo en el mismo día. Trabajamos con
-        dos opciones, la primera es abordaje láser y
-        herramientas brindadas por nuestros terapeutas para
-        la modificación de la conduta en torno al cigarrillo
-        en el mismo día. Como segunda opción ofrecemos,
-        abordaje láser y acompañamiento psicológico virtual
-        para trabajar el desarme de habito por fuera del
-        consultorio. Cada uno de estos abordajes consta de
-        diferentes valores. Comuníquese al WhatsApp para
-        solicitar más información al respecto.{' '}
+        Es una terapia alternativa que por estimulación
+        actúa en el centro de la adicción. Consiste en la
+        aplicación de un láser de baja frecuencia en
+        distintos puntos de cara, cabeza, oreja y mano. El
+        proceso se lleva a cabo en el mismo día, dependiendo
+        del grado de adicción varía la cantidad de
+        repeticiones. El efecto del láser es generar
+        endorfina endogena por estimulación para que con
+        mayor tranquilidad comience el proceso de
+        deshabituación del consumo. La persona tendrá la
+        posibilidad de comenzar terapia floral con el
+        seguimiento de de psicólogos cognitivo conductual.
+      </p>
+      <p className="mb-4">
+        El abordaje para sustancias lleva un acompañamiento
+        psicológico y psiquiátrico si fuese necesario.
       </p>
       <div className="flex w-full justify-end">
         <Link href="/#contacto">

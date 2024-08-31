@@ -33,28 +33,20 @@ export default function Page() {
         sociales. Es importante buscar tratamiento y apoyo
         profesional para manejar y superar esta enfermedad.
       </p>
-      <h1 className="text-3xl font-bold mb-4">
-        Abordaje Láser
-      </h1>
+      <h1 className="text-3xl font-bold mb-4">Abordaje</h1>
       <p className="mb-4">
         Es una terapia alternativa que por estimulación
         actúa en el centro de la adicción. Consiste en la
         aplicación de un láser de baja frecuencia en
-        distintos puntos de cara y cabeza. El proceso se
-        lleva a cabo en el mismo día, dependiendo de la
-        sustancia a tratar varia la cantidad de repeticiones
-        en la aplicación. El efecto del láser es quitar la
-        dependencia física de la sustancia para que con
+        distintos puntos de cara, cabeza, oreja y mano. El
+        proceso se lleva a cabo en el mismo día, dependiendo
+        del grado de adicción varía la cantidad de
+        repeticiones. El efecto del láser es generar
+        endorfina endogena por estimulación para que con
         mayor tranquilidad comience el proceso de
-        deshabituación del consumo.
-      </p>
-      <p className="mb-4">
-        En lo que respecta a abordajes de sustancias
-        psicoactivas (cocaína, alcohol, crack, etc..) se
-        trabaja con un acompañamiento conductual, donde la
-        persona a tratarse tendrá sesiones con psicóloga,
-        terapeuta en adicciones y psiquiatra si así lo
-        requiriese.
+        deshabituación del consumo. La persona tendrá la
+        posibilidad de comenzar terapia floral con el
+        seguimiento de de psicólogos cognitivo conductual.
       </p>
       <div className="flex w-full justify-end">
         <Link href="/#contacto">

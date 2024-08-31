@@ -5,6 +5,7 @@ import { Contact } from '@/components/common/contact'
 import { Martini, Pill, Cigarette } from 'lucide-react'
 import Link from 'next/link'
 import Whatsapp from '@/components/common/Whatsapp'
+import Dropdown from '@/components/ui/dropdown'
 
 const images = [
   '/carousel1.jpg',
@@ -136,16 +137,22 @@ export default function Home() {
                 talleres individuales se llevarán a cabo
                 dependiendo de las necesidades de cada
                 persona.
-                <ul className="my-10">
-                  <li>Logro de objetivos (individual)</li>
-                  <li>Inteligencia emocional</li>
-                  <li>Psicodrama (grupal)</li>
-                  <li>Comunicación efectiva (grupal)</li>
-                  <li>
-                    Grupos de charla de madres de hijos en
-                    consumo
-                  </li>
-                </ul>
+                <div className="p-6">
+                  <Dropdown primaryText="Logro de objetivos (individual)" secondaryText="Este es el texto secundario que se despliega." />
+                </div>
+                <div className="p-6">
+                  <Dropdown primaryText="Inteligencia emocional" secondaryText="Este es el texto secundario que se despliega." />
+                </div>
+                <div className="p-6">
+                  <Dropdown primaryText="Psicodrama (grupal)" secondaryText="Este es el texto secundario que se despliega." />
+                </div>
+                <div className="p-6">
+                  <Dropdown primaryText="Comunicación efectiva (grupal)" secondaryText="Este es el texto secundario que se despliega." />
+                </div>
+                <div className="p-6">
+                  <Dropdown primaryText="Grupos de charla de madres de hijos en
+                    consumo" secondaryText="Este es el texto secundario que se despliega." />
+                </div>
               </div>
             </Typography>
           </div>
