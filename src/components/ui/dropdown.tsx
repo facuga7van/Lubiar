@@ -28,19 +28,14 @@ const Dropdown: React.FC<DropdownProps> = ({
       onClick={toggleDropdown}
     >
       <div className="flex justify-between items-center">
-        <Typography
-        className='font-bold'
-          variant="h6"
-        >
+        <Typography className="font-bold" variant="h6">
           {primaryText}
         </Typography>
         {isOpen ? <ArrowBigUpDash /> : <ArrowBigDownDash />}
       </div>
       {isOpen && (
         <div className="mt-2">
-          <Typography
-            variant="p"
-          >
+          <Typography variant="p">
             {secondaryText}
           </Typography>
         </div>

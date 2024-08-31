@@ -138,20 +138,35 @@ export default function Home() {
                 dependiendo de las necesidades de cada
                 persona.
                 <div className="p-6">
-                  <Dropdown primaryText="Logro de objetivos (individual)" secondaryText="Este es el texto secundario que se despliega." />
+                  <Dropdown
+                    primaryText="Logro de objetivos (individual)"
+                    secondaryText="Este es el texto secundario que se despliega."
+                  />
                 </div>
                 <div className="p-6">
-                  <Dropdown primaryText="Inteligencia emocional" secondaryText="Este es el texto secundario que se despliega." />
+                  <Dropdown
+                    primaryText="Inteligencia emocional"
+                    secondaryText="Este es el texto secundario que se despliega."
+                  />
                 </div>
                 <div className="p-6">
-                  <Dropdown primaryText="Psicodrama (grupal)" secondaryText="Este es el texto secundario que se despliega." />
+                  <Dropdown
+                    primaryText="Psicodrama (grupal)"
+                    secondaryText="Este es el texto secundario que se despliega."
+                  />
                 </div>
                 <div className="p-6">
-                  <Dropdown primaryText="Comunicación efectiva (grupal)" secondaryText="Este es el texto secundario que se despliega." />
+                  <Dropdown
+                    primaryText="Comunicación efectiva (grupal)"
+                    secondaryText="Este es el texto secundario que se despliega."
+                  />
                 </div>
                 <div className="p-6">
-                  <Dropdown primaryText="Grupos de charla de madres de hijos en
-                    consumo" secondaryText="Este es el texto secundario que se despliega." />
+                  <Dropdown
+                    primaryText="Grupos de charla de madres de hijos en
+                    consumo"
+                    secondaryText="Este es el texto secundario que se despliega."
+                  />
                 </div>
               </div>
             </Typography>
