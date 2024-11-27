@@ -10,7 +10,6 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import Whatsapp from '@/components/common/Whatsapp'
-import Dropdown from '@/components/ui/dropdown'
 import Card from '@/components/ui/card'
 const images = [
   '/carousel1.jpg',
@@ -153,65 +152,65 @@ export default function Home() {
                 talleres individuales se llevarán a cabo
                 dependiendo de las necesidades de cada
                 persona.
-                <div className='flex flex-wrap gap-6'>
-                <div className="min-w-xl py-6">
-                  <Card
-                    titulo={'Taller Focusing'}
-                    descripcion={
-                      'Descubre tus objetivos desde el corazón y lográ el cambio con Focusing.'
-                    }
-                    objetivo={
-                      'Enseñar a los participantes a escuchar sus sensaciones corporales como guía para comprender y resolver situaciones personales o emocionales.'
-                    }
-                    duracion={
-                      '1 sesión semanal de 1.5 a 2 horas aproximadamente'
-                    }
-                    detalle={
-                      'El Focusing es una técnica basada en la conexión entre mente y cuerpo. Ayuda a acceder a una percepción interna, corporal y subjetiva sobre experiencias. Ideal para quienes desean trabajar desde el cuerpo y abordar situaciones personales.'
-                    }
-                    modalidad={'Grupal e individual'}
-                  ></Card>
-                </div>
-                <div className="min-w-xl py-6">
-                  <Card
-                    titulo={'Inteligencia Emocional'}
-                    descripcion={
-                      'Descubre cómo tus emociones pueden transformar tu vida.'
-                    }
-                    objetivo={
-                      'Brindar herramientas prácticas para desarrollar y fortalecer las habilidades de inteligencia emocional.'
-                    }
-                    duracion={
-                      '1 sesión semanal de 1.5 horas aproximadamente'
-                    }
-                    detalle={
-                      'Explorar cómo entender, gestionar y responder adecuadamente a las emociones en diferentes contextos. Ideal para mejorar la autogestión y relaciones personales.'
-                    }
-                    modalidad={
-                      'Grupal o individual (grupos reducidos)'
-                    }
-                  ></Card>
-                </div>
-                <div className="min-w-xl py-6">
-                  <Card
-                    titulo={
-                      'Equilibrio entre mente y cuerpo'
-                    }
-                    descripcion={
-                      'Aprende a manejar el estrés y mejorar tu bienestar integral.'
-                    }
-                    objetivo={
-                      'Brindar herramientas prácticas para manejar el estrés, mejorar la salud emocional y fortalecer el cuerpo.'
-                    }
-                    duracion={
-                      '1 sesión semanal de 1.5 a 2 horas aproximadamente'
-                    }
-                    detalle={
-                      'Combina mindfulness, relajación, movimiento físico consciente y educación emocional. Ideal para quienes buscan una experiencia integral.'
-                    }
-                    modalidad={'Grupal e individual'}
-                  ></Card>
-                </div>
+                <div className="flex flex-wrap gap-6">
+                  <div className="min-w-xl py-6">
+                    <Card
+                      titulo={'Taller Focusing'}
+                      descripcion={
+                        'Descubre tus objetivos desde el corazón y lográ el cambio con Focusing.'
+                      }
+                      objetivo={
+                        'Enseñar a los participantes a escuchar sus sensaciones corporales como guía para comprender y resolver situaciones personales o emocionales.'
+                      }
+                      duracion={
+                        '1 sesión semanal de 1.5 a 2 horas aproximadamente'
+                      }
+                      detalle={
+                        'El Focusing es una técnica basada en la conexión entre mente y cuerpo. Ayuda a acceder a una percepción interna, corporal y subjetiva sobre experiencias. Ideal para quienes desean trabajar desde el cuerpo y abordar situaciones personales.'
+                      }
+                      modalidad={'Grupal e individual'}
+                    ></Card>
+                  </div>
+                  <div className="min-w-xl py-6">
+                    <Card
+                      titulo={'Inteligencia Emocional'}
+                      descripcion={
+                        'Descubre cómo tus emociones pueden transformar tu vida.'
+                      }
+                      objetivo={
+                        'Brindar herramientas prácticas para desarrollar y fortalecer las habilidades de inteligencia emocional.'
+                      }
+                      duracion={
+                        '1 sesión semanal de 1.5 horas aproximadamente'
+                      }
+                      detalle={
+                        'Explorar cómo entender, gestionar y responder adecuadamente a las emociones en diferentes contextos. Ideal para mejorar la autogestión y relaciones personales.'
+                      }
+                      modalidad={
+                        'Grupal o individual (grupos reducidos)'
+                      }
+                    ></Card>
+                  </div>
+                  <div className="min-w-xl py-6">
+                    <Card
+                      titulo={
+                        'Equilibrio entre mente y cuerpo'
+                      }
+                      descripcion={
+                        'Aprende a manejar el estrés y mejorar tu bienestar integral.'
+                      }
+                      objetivo={
+                        'Brindar herramientas prácticas para manejar el estrés, mejorar la salud emocional y fortalecer el cuerpo.'
+                      }
+                      duracion={
+                        '1 sesión semanal de 1.5 a 2 horas aproximadamente'
+                      }
+                      detalle={
+                        'Combina mindfulness, relajación, movimiento físico consciente y educación emocional. Ideal para quienes buscan una experiencia integral.'
+                      }
+                      modalidad={'Grupal e individual'}
+                    ></Card>
+                  </div>
                 </div>
               </div>
             </Typography>

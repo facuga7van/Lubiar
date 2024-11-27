@@ -53,7 +53,7 @@ export function Contact() {
         </button>
       </form>
       <Typography variant="p">
-        También puedes mandarnos un mensaje  por Whatsapp al{' '}
+        También puedes mandarnos un mensaje por Whatsapp al{' '}
         <Link href="#" className="text-blue-800">
           +54 9 11 7206-2121
         </Link>{' '}
