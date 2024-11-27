@@ -53,16 +53,16 @@ export function Contact() {
         </button>
       </form>
       <Typography variant="p">
-        También puedes llamarnos al{' '}
+        También puedes mandarnos un mensaje  por Whatsapp al{' '}
         <Link href="#" className="text-blue-800">
           +54 9 11 7206-2121
         </Link>{' '}
         o enviarnos un correo a{' '}
         <Link
-          href="mailto:lubiar@lubiar.com.ar"
+          href="mailto:lubiar.salud@gmail.com"
           className="text-blue-800"
         >
-          lubiar@lubiar.com.ar
+          lubiar.salud@gmail.com
         </Link>
       </Typography>
     </div>

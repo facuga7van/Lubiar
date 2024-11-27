@@ -130,24 +130,10 @@ footer {
   .header {
     z-index: 99;
   }
-  .bg-color-1 {
-    background-color: #f0f0f0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Difumina el borde */
-  }
   .spectrum-background {
     width: 500px;
     height: 1000px;
-    background: linear-gradient(
-        150deg,
-        #ecedee,
-        transparent 30%
-      ),
-      linear-gradient(
-        330deg,
-        rgb(210, 206, 242),
-        transparent 30%
-      ),
-      linear-gradient(225deg, #fff8f8, #fff7fa, #faf6fd);
+    background: #ffffff;
   }
 }
 

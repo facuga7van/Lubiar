@@ -2,11 +2,16 @@ import Typography from '@/components/ui/typography'
 import Feature from './feature'
 import ImageCarousel from '@/components/common/Carrousel'
 import { Contact } from '@/components/common/contact'
-import { Martini, Pill, Cigarette } from 'lucide-react'
+import {
+  Martini,
+  Pill,
+  Cigarette,
+  Weight
+} from 'lucide-react'
 import Link from 'next/link'
 import Whatsapp from '@/components/common/Whatsapp'
 import Dropdown from '@/components/ui/dropdown'
-
+import Card from '@/components/ui/card'
 const images = [
   '/carousel1.jpg',
   '/carousel2.jpg',
@@ -65,12 +70,23 @@ export default function Home() {
               <Link
                 className="transform hover:scale-105 transition duration-300
                   ease-in-out"
+                href="/controldepeso"
+              >
+                <Feature
+                  icon={<Weight size={24} />}
+                  headline="Control de Peso"
+                  description="El sobrepeso afecta la salud física y emocional, aumentando el riesgo de enfermedades y disminuyendo la calidad de vida."
+                />
+              </Link>
+              <Link
+                className="transform hover:scale-105 transition duration-300
+                  ease-in-out"
                 href="/tabaquismo"
               >
                 <Feature
                   icon={<Cigarette size={24} />}
                   headline="Tabaquismo"
-                  description="El tabaquismo es una enfermedad crónica que causa dependencia al tabaco, afectando gravemente la salud con enfermedades como cáncer de pulmón y problemas cardíacos. También impacta negativamente a quienes rodean al fumador."
+                  description="El tabaquismo es una enfermedad crónica que causa dependencia al tabaco, afectando gravemente la salud con enfermedades como cáncer de pulmón y problemas cardíacos."
                 />
               </Link>
               <Link
@@ -92,7 +108,7 @@ export default function Home() {
                 <Feature
                   icon={<Pill size={24} />}
                   headline="Cocainomania"
-                  description="La adicción a la cocaína es una enfermedad crónica que genera dependencia física y emocional a esta droga. Afecta gravemente la salud, causando problemas cardíacos, neurológicos y mentales. También impacta negativamente en la vida personal y social del individuo. "
+                  description="La adicción a la cocaína es una enfermedad crónica que genera dependencia física y emocional a esta droga. Afecta gravemente la salud, causando problemas cardíacos, neurológicos y mentales."
                 />
               </Link>
             </div>
@@ -126,7 +142,7 @@ export default function Home() {
           </div>
         </section>
         <section id="talleres">
-          <div className="flex flex-col gap-6 max-w-2xl items-center">
+          <div className="flex flex-col gap-12 items-center">
             <Typography className="max-w-2xl" variant="h1">
               Talleres
             </Typography>
@@ -137,36 +153,65 @@ export default function Home() {
                 talleres individuales se llevarán a cabo
                 dependiendo de las necesidades de cada
                 persona.
-                <div className="p-6">
-                  <Dropdown
-                    primaryText="Logro de objetivos (individual)"
-                    secondaryText="Este es el texto secundario que se despliega."
-                  />
+                <div className='flex flex-wrap gap-6'>
+                <div className="min-w-xl py-6">
+                  <Card
+                    titulo={'Taller Focusing'}
+                    descripcion={
+                      'Descubre tus objetivos desde el corazón y lográ el cambio con Focusing.'
+                    }
+                    objetivo={
+                      'Enseñar a los participantes a escuchar sus sensaciones corporales como guía para comprender y resolver situaciones personales o emocionales.'
+                    }
+                    duracion={
+                      '1 sesión semanal de 1.5 a 2 horas aproximadamente'
+                    }
+                    detalle={
+                      'El Focusing es una técnica basada en la conexión entre mente y cuerpo. Ayuda a acceder a una percepción interna, corporal y subjetiva sobre experiencias. Ideal para quienes desean trabajar desde el cuerpo y abordar situaciones personales.'
+                    }
+                    modalidad={'Grupal e individual'}
+                  ></Card>
                 </div>
-                <div className="p-6">
-                  <Dropdown
-                    primaryText="Inteligencia emocional"
-                    secondaryText="Este es el texto secundario que se despliega."
-                  />
+                <div className="min-w-xl py-6">
+                  <Card
+                    titulo={'Inteligencia Emocional'}
+                    descripcion={
+                      'Descubre cómo tus emociones pueden transformar tu vida.'
+                    }
+                    objetivo={
+                      'Brindar herramientas prácticas para desarrollar y fortalecer las habilidades de inteligencia emocional.'
+                    }
+                    duracion={
+                      '1 sesión semanal de 1.5 horas aproximadamente'
+                    }
+                    detalle={
+                      'Explorar cómo entender, gestionar y responder adecuadamente a las emociones en diferentes contextos. Ideal para mejorar la autogestión y relaciones personales.'
+                    }
+                    modalidad={
+                      'Grupal o individual (grupos reducidos)'
+                    }
+                  ></Card>
                 </div>
-                <div className="p-6">
-                  <Dropdown
-                    primaryText="Psicodrama (grupal)"
-                    secondaryText="Este es el texto secundario que se despliega."
-                  />
+                <div className="min-w-xl py-6">
+                  <Card
+                    titulo={
+                      'Equilibrio entre mente y cuerpo'
+                    }
+                    descripcion={
+                      'Aprende a manejar el estrés y mejorar tu bienestar integral.'
+                    }
+                    objetivo={
+                      'Brindar herramientas prácticas para manejar el estrés, mejorar la salud emocional y fortalecer el cuerpo.'
+                    }
+                    duracion={
+                      '1 sesión semanal de 1.5 a 2 horas aproximadamente'
+                    }
+                    detalle={
+                      'Combina mindfulness, relajación, movimiento físico consciente y educación emocional. Ideal para quienes buscan una experiencia integral.'
+                    }
+                    modalidad={'Grupal e individual'}
+                  ></Card>
                 </div>
-                <div className="p-6">
-                  <Dropdown
-                    primaryText="Comunicación efectiva (grupal)"
-                    secondaryText="Este es el texto secundario que se despliega."
-                  />
-                </div>
-                <div className="p-6">
-                  <Dropdown
-                    primaryText="Grupos de charla de madres de hijos en
-                    consumo"
-                    secondaryText="Este es el texto secundario que se despliega."
-                  />
                 </div>
               </div>
             </Typography>
