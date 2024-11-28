@@ -14,7 +14,7 @@ import Card from '@/components/ui/card'
 const images = [
   '/carousel1.jpg',
   '/carousel2.jpg',
-  '/carousel3.jpg'
+  '/carousel4.jpg'
 ]
 
 export default function Home() {
@@ -39,13 +39,15 @@ export default function Home() {
         </Typography>
         <div className="w-[40%] h-px bg-gray-300 my-2"></div>
         <Typography className="max-w-2xl" variant="h2">
-          Abordaje psicológico y alternativo para dejar de
-          consumir
+          Entendemos de renacer
+        </Typography>
+        <Typography className="max-w-2xl" variant="h3">
+          Abordajes psicológicos y alternativos para dejar de consumir
         </Typography>
         <Typography className="max-w-2xl" variant="h6">
           Realizamos tratamientos cognitivos conductuales,
           tratamientos láser de baja intensidad para la
-          remisión de consumo y terapia florar. Nos
+          remisión de consumo y terapia floral. Nos
           caracterizamos por interrelacionar abordajes
           alternativos y convencionales.
         </Typography>
@@ -69,11 +71,11 @@ export default function Home() {
               <Link
                 className="transform hover:scale-105 transition duration-300
                   ease-in-out"
-                href="/controldepeso"
+                href="/descensodepeso"
               >
                 <Feature
                   icon={<Weight size={24} />}
-                  headline="Control de Peso"
+                  headline="Descenso de Peso"
                   description="El sobrepeso afecta la salud física y emocional, aumentando el riesgo de enfermedades y disminuyendo la calidad de vida."
                 />
               </Link>
@@ -166,7 +168,7 @@ export default function Home() {
                         '1 sesión semanal de 1.5 a 2 horas aproximadamente'
                       }
                       detalle={
-                        'El Focusing es una técnica basada en la conexión entre mente y cuerpo. Ayuda a acceder a una percepción interna, corporal y subjetiva sobre experiencias. Ideal para quienes desean trabajar desde el cuerpo y abordar situaciones personales.'
+                        'El Focusing es una técnica centrada en la sensación física. Ayuda a acceder a la percepción interna y externa. Ideal para quienes desean trabajar desde el cuerpo y abordar situaciones personales.'
                       }
                       modalidad={'Grupal e individual'}
                     ></Card>
