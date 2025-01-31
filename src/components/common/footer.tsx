@@ -25,10 +25,11 @@ export function Footer() {
           </Link>
         </div>
         <div className="flex max-w-fit items-center gap-x-6">
-          <Link href="https://www.facebook.com/profile.php?id=61559673185832" className="pointer block w-fit">
-            <Typography variant="p">
-              Facebook
-            </Typography>
+          <Link
+            href="https://www.facebook.com/profile.php?id=61559673185832"
+            className="pointer block w-fit"
+          >
+            <Typography variant="p">Facebook</Typography>
           </Link>
           <Link
             href="#"
@@ -43,7 +44,6 @@ export function Footer() {
               54 9 11 7206-2121
             </Typography>
           </Link>
-          
         </div>
       </div>
     </footer>
