@@ -2,6 +2,7 @@ import Typography from '@/components/ui/typography'
 import Feature from './feature'
 import ImageCarousel from '@/components/common/Carrousel'
 import { Contact } from '@/components/common/contact'
+import ReviewsCarousel from '@/components/common/ReviewsCarousel';
 import {
   Martini,
   Pill,
@@ -42,7 +43,8 @@ export default function Home() {
           Entendemos de renacer
         </Typography>
         <Typography className="max-w-2xl" variant="h3">
-          Abordajes psicológicos y alternativos para dejar de consumir
+          Abordajes psicológicos y alternativos para dejar
+          de consumir
         </Typography>
         <Typography className="max-w-2xl" variant="h6">
           Realizamos tratamientos cognitivos conductuales,
@@ -115,6 +117,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section>
+          <Typography variant="h5" className='italic'>Nuestros abordajes alternativos se realizan con láseres de baja frecuencia de la empresa CEC autorizados por ANMAT</Typography>
+        </section>
         <section id="aboutus">
           <div className="flex flex-col gap-6 max-w-2xl items-center">
             <Typography className="max-w-2xl" variant="h1">
@@ -140,6 +145,9 @@ export default function Home() {
                 className="p-2"
               />
             </div>
+            <div className=''>
+              <Typography variant="h5">📍Buenos Aires, Argentina</Typography>
+          </div>
           </div>
         </section>
         <section id="talleres">
@@ -216,6 +224,14 @@ export default function Home() {
                 </div>
               </div>
             </Typography>
+          </div>
+        </section>
+        <section id="reseñas">
+          <div className="flex flex-col gap-6 items-center">
+          <Typography className="max-w-[55rem]" variant="h1">
+              ¿Qué dicen nuestros consultantes?
+            </Typography>
+          <ReviewsCarousel />
           </div>
         </section>
         <section id="contacto">

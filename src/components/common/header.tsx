@@ -34,6 +34,11 @@ export function Header({ className }: SidebarProps) {
       openInNewTab: false
     },
     {
+      href: '/#reseñas',
+      title: 'Reseñas',
+      openInNewTab: false
+    },
+    {
       href: '/#contacto',
       title: 'Contacto',
       openInNewTab: false
